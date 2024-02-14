@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+    <link rel="stylesheet" href="form.css" class="href" />
+  </head>
+  <body>
+   
+    <div class="container">
+      <h1>Register Here!</h1>
+      <form class="login-form">
+
+
+        <div class="inputs">
+            <input id="name" placeholder="" type="text" required />
+            <label for="name" class="placeholder">Name</label>
+            <p id="error">error message</p>
+        </div>
+
+        <div class="inputs">
+          <input id="email" placeholder=""  required />
+          <label for="email" class="placeholder">Email</label>
+          <p id="error">error message</p>
+        </div>
+
+        <!-- <div class="genders">
+            <fieldset>
+            <legend>Gender</legend>
+            <div class="gender-options">
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="fmale">Female
+        </div>
+        </fieldset>
+        </div> -->
+        <div class="gender-box">
+            <span class="gender-title">Gender</span>
+            <div class="gender-options">
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender" id="other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+
+
+
+
+        <div class="inputs">
+          <input id="phone" placeholder="" required />
+          <label for="phone" class="placeholder">Phone Number</label>
+          <p id="error">error message</p>
+        </div>
+
+        <div class="terms" id="terms-div">
+          <input type="checkbox" name="terms" id="terms1" required />
+          <label for="terms1" id="check-text">I Agree to Terms & Conditions</label>
+        </div>
+
+        <div class="submit-class">
+          <button type="submit" value="Sign Up" name="submit" id="submit" disabled>Signup </button>
+        </div>
+      </form>
+    </div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
